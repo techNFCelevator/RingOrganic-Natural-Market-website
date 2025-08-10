@@ -1,0 +1,256 @@
+html{
+    box-sizing: border-box;
+}
+*,*:after,*:before{
+    box-sizing: inherit;
+}
+@font-face{
+    font-family: 'ibm_plex_sans_jp';
+    font-weight: normal;
+    font-style: normal;
+    src: url(../fonts/ibm_plex_sans_jp/ibmplexsansjp-regular.ttf);
+}
+.current-position{
+    background-color: brown;
+    color: white;
+}
+.open{
+    display: block;
+}
+body{
+    background-image: url("https://static1.squarespace.com/static/526c5af8e4b039ceb7d8eab7/t/583495deebbd1ab42ffd0d90/1479841246826/halftone-600x600.jpg");
+    display: flex;
+    flex-direction: column;
+    font-family: 'ibm_plex_sans_jp';
+    margin: auto;
+    max-width: 1920px;
+    min-height: 100vh;
+    padding: 0;
+}
+footer{
+    background-color: lightgreen;
+}
+footer,header{
+    margin: 0;
+}
+footer a{
+    text-decoration: none;
+}
+footer h2,footer ul{
+    margin: 20px;
+}
+footer li{
+    margin: 5px;
+}
+footer object{
+    width: 2em;
+}
+footer object svg{
+    pointer-events: bounding-box;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+}
+footer ul,header ul{
+    list-style: none;
+}
+header{
+    background-color: blanchedalmond;
+    color: brown;
+    display: grid;
+    grid-template-columns: 88% 12%;
+}
+header>a{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    text-decoration: none;
+}
+header button{
+    background: inherit;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    margin: auto;
+    padding: 0;
+}
+header button:active{
+    background-color: darkgreen;
+}
+header h1{
+    font-size: x-large;
+}
+header h1,header img{
+    display: block;
+    margin: auto 0;
+}
+header img{
+    padding: 10px;
+}
+header li{
+    color: white;
+    display: inline;
+    text-align: center;
+}
+header li a{
+    border: solid 5px brown;
+    color: inherit;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+header li a:active{
+    font-weight: bolder;
+}
+header li a:focus,header li a:hover{
+    background-color: green;
+}
+header nav{
+    background-color: red;
+    display: none;
+    grid-column: 1/span 2;
+    margin: 0 -100vw;
+    padding: 0 100vw;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+}
+main{
+    flex: 1;
+    padding: 10px;
+}
+main a{
+    color: brown;
+    text-decoration: none;
+}
+main a:active{
+    font-weight: bolder;
+}
+main a:focus,main a:hover{
+    background-color: brown;
+    color: white;
+}
+main article,main section{
+    padding: 10px;
+}
+main img{
+    max-width: 100%;
+}
+main>img{
+    justify-self: center;
+}
+main input,main select,main textarea{
+    background-color: cornflowerblue;
+    color: azure;
+}
+main table{
+    background-color: darkolivegreen;
+    color: wheat;
+}
+main table,main tbody,main td,main th,main thead{
+    border: solid 2px lightskyblue;
+}
+main tbody td{
+    font-size: small;
+}
+main tbody th{
+    background-color: blue;
+    text-align: right;
+}
+main tbody tr:nth-child(odd){
+    background-color: darkred;
+}
+main textarea{
+    height: 20ch;
+    min-width: 35ch;
+}
+main thead{
+    color: whitesmoke;
+}
+main ul{
+    list-style-image: url(../images/fresh-apple-icon.svg);
+}
+@media(min-width:356px){
+    header h1{
+        font-size: xx-large;
+    }
+}
+@media(min-width:840px){
+    header button{
+        display: none;
+    }
+    header li{
+        color: inherit;
+        margin: auto;
+    }
+    header li a{
+        border-left: none;
+        border-right: none;
+        padding: 5px;
+    }
+    header li a:focus,header li a:hover{
+        color: white;
+    }
+    header li:first-child a{
+        border-left: solid 5px brown;
+    }
+    header li:last-child a{
+        border-right: solid 5px brown;
+    }
+    header nav{
+        background: none;
+        display: block;
+        margin: auto;
+        padding: 0;
+    }
+    header ul{
+        display: flex;
+    }
+}
+@media(min-width:930px){
+    header li a{
+        padding: 10px;
+    }
+}
+@media(min-width:1033px){
+    header{
+        grid-template-columns: 10% 90%;
+    }
+    header h1{
+        font-size: x-small;
+        width: 40%;
+    }
+    header li{
+        margin: auto;
+    }
+    header nav{
+        grid-area: 1/2/1/2;
+    }
+}
+@media(min-width:1065px){
+    header h1{
+        font-size: small;
+    }
+}
+@media(min-width:1100px){
+    header h1{
+        font-size: medium;
+    }
+}
+@media(min-width:1500px){
+    header h1{
+        font-size: large;
+    }
+}
+@media(min-width:1750px){
+    header h1{
+        font-size: x-large;
+    }
+}

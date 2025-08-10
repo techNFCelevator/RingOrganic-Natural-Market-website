@@ -1,0 +1,9 @@
+main article{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto auto auto;
+}
+main article>img{
+    grid-area: 1/1/span 5/1;
+    padding: 10px;
+}

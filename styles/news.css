@@ -1,0 +1,11 @@
+@media(min-width:666px){
+    main section{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    main section>h2{
+        grid-area: 1/1/1/span 3;
+    }
+    main section>p{
+        grid-area: 2/1/2/span 3;
+    }
+}

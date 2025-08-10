@@ -1,0 +1,25 @@
+main nav a{
+    display: block;
+    padding: 5px;
+}
+main nav li{
+    display: inline;
+}
+main nav ul{
+    list-style: none;
+    padding: 0;
+}
+@media(min-width:666px){
+    main{
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+    main>div,main>section{
+        grid-column: 2/2;
+        padding: 10px;
+    }
+    main>nav{
+        grid-column: 1/1;
+        grid-row: 1/span 2;
+    }
+}

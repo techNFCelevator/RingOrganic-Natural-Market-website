@@ -1,0 +1,6 @@
+main form{
+    border-top: solid black 2px;
+}
+main form>input{
+    background-color: green;
+}

@@ -1,0 +1,24 @@
+main>section{
+    display: flex;
+    flex-direction: column;
+}
+main>section>img{
+    align-self: center;
+}
+@media(min-width:700px){
+    main>section{
+        display: flex;
+        flex-direction: column;
+    }
+    main>section>section{
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+    }
+    main>section>section>img{
+        grid-area: 1/2/span 2/2;
+    }
+    main>section>section:last-child>h4,main>section>section:last-child>p{
+        grid-column: 1/span 2;
+    }
+}

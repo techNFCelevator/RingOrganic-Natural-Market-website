@@ -1,0 +1,8 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+main img{
+    align-self: center;
+    max-width: 500px;
+}

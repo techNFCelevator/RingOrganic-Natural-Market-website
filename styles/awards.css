@@ -1,0 +1,9 @@
+main article{
+    border-top: black solid 2px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+main img{
+    grid-column: 1/1;
+    grid-row: 1/span 4;
+}

@@ -1,0 +1,24 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+@media(min-width:500px){
+    main>section>div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width:650px){
+    main>img{
+        align-self: center;
+        max-width: 50%;
+    }
+}
+@media(min-width:850px){
+    main>section>div{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    main>section:last-child>div{
+        grid-template-columns: 1fr 1fr;
+    }
+}

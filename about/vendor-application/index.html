@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="../../images/fresh-apple-icon.svg" rel="icon" type="image/svg+xml">
+        <link href="../../styles/general.css" rel="stylesheet">
+        <link href="../../styles/subnav_lists.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <script defer="defer" src="../../scripts/menu.js"></script>
+        <title>Vendor Application - RingOrganic Natural Market</title>
+    </head>
+    <body>
+        <header>
+            <a href="../../index.html">
+                <img alt="RingOrganic Natural Market logo" src="../../images/fresh-apple-icon.svg">
+                <h1>RingOrganic Natural Market</h1>
+            </a>
+            <button class="menu-button">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="../../locations/index.html">LOCATIONS</a></li>
+                    <li><a class="current-position">ABOUT</a></li>
+                    <li><a href="../../flyers/index.html">FLYERS</a></li>
+                    <li><a href="../../blog/news/index.html">BLOG</a></li>
+                    <li><a href="../../events/index.html">EVENTS</a></li>
+                    <li><a href="../../careers/index.html">CAREERS</a></li>
+                    <li><a href="../../ring-points/index.html">RING POINTS</a></li>
+                    <li><a href="../../online-shopping.html">SHOP ONLINE</a></li>
+                    <li><a href="">THE RING CLINIC</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <nav>
+                <h2>ABOUT</h2>
+                <ul>
+                    <li><a href="../about-us/index.html">ABOUT US</a></li>
+                    <li><a href="../awards/index.html">AWARDS</a></li>
+                    <li><a href="../our-growers/index.html">OUR GROWERS</a></li>
+                    <li><a href="../community/index.html">COMMUNITY</a></li>
+                    <li><a class="current-position">VENDOR APPLICATION</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h3>VENDOR APPLICATION</h3>
+                <form action="../../scripts/vendor-app.php" method="get">
+                    <div>
+                        <label for="vendor_name">Vendor Name *</label>
+                        <br>
+                        <input id="vendor_name" name="vendor_name" required="required" type="text">
+                    </div>
+                    <div>
+                        <p>Contact Name *</p>
+                        <label for="contact_first_name">First</label>
+                        <input id="contact_first_name" name="contact_first_name" required="required" type="text">
+                        <br>
+                        <label for="contact_last_name">Last</label>
+                        <input id="contact_last_name" name="contact_last_name" required="required" type="text">
+                    </div>
+                    <div>
+                        <label for="phone">Phone *</label>
+                        <br>
+                        <input id="phone" name="phone" required="required" type="tel">
+                    </div>
+                    <div>
+                        <label for="email">Email *</label>
+                        <br>
+                        <input id="email" name="email" required="required" type="email">
+                    </div>
+                    <div>
+                        <p>Address *</p>
+                        <label for="address">Address 1</label>
+                        <input id="address" name="address" required="required" type="text">
+                        <label for="address2">Address 2</label>
+                        <input id="address2" name="address2" type="text">
+                        <br>
+                        <label for="city">City</label>
+                        <input id="city" name="city" required="required" type="text">
+                        <label for="province_state">State/Province</label>
+                        <input id="province_state" name="province_state" required="required" type="text">
+                        <br>
+                        <label for="postal_zip">Zip/Postal Code</label>
+                        <input id="postal_zip" name="postal_zip" required="required" type="text">
+                        <label for="country">Country</label>
+                        <input id="country" name="contact_country" required="required" type="text">
+                    </div>
+                    <div>
+                        <label for="reason">Reason for RingOrganic Natural Market to sell your products: *</label>
+                        <br>
+                        <textarea id="reason" name="reason"></textarea>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <h2>Follow Us</h2>
+            <ul>
+                <li><object data="../../images/instagram_icon.svg" type="image/svg+xml"></object></li>
+                <li><object data="../../images/facebook_icon.svg" type="image/svg+xml"></object></li>
+                <li><object data="../../images/twitter_icon.svg" type="image/svg+xml"></object></li>
+                <li><object data="../../images/youtube_icon.svg" type="image/svg+xml"></object></li>
+            </ul>
+        </footer>
+    </body>
+</html>

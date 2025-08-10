@@ -1,0 +1,26 @@
+main div{
+    display: flex;
+    flex-direction: column;
+}
+@media(min-width:900px){
+    main section{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+    }
+    main section h3{
+        grid-area: 1/1/1/1;
+    }
+    main section img{
+        grid-area: 1/2/span 2/2;
+    }
+    main section p{
+        grid-area: 2/1/2/1;
+    }
+}
+@media(min-width:1100px){
+    main>div>img{
+        align-self: center;
+        max-width: 50%;
+    }
+}

@@ -1,0 +1,38 @@
+main div>img{
+    border-bottom: solid 2px black;
+    padding: 5px;
+}
+main section:last-child{
+    border-top: solid 2px black;
+}
+@media(min-width:800px){
+    main div,main section{
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        grid-template-rows: 0.5fr 1fr;
+        padding: 10px;
+    }
+    main div>p{
+        border-bottom: solid 2px black;
+        margin: 0;
+        grid-area: 1/1/span 2/1;
+    }
+    main img{
+        grid-area: 1/2/span 2/2;
+    }
+    main section{
+        grid-column: 1/span 2;
+    }
+    main section h3{
+        grid-area: 1/1/1/1;
+    }
+    main section p{
+        grid-area: 2/1/2/1;
+    }
+    main section:last-child{
+        grid-template-columns: auto;
+    }
+    main section:last-child strong{
+        text-align: center;
+    }
+}

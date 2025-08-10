@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="../images/fresh-apple-icon.svg" rel="icon" type="image/svg+xml">
+        <link href="../styles/donation-requests.css" rel="stylesheet">
+        <link href="../styles/general.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <script defer="defer" src="../scripts/menu.js"></script>
+        <title>Donation Requests - RingOrganic Natural Market</title>
+    </head>
+    <body>
+        <header>
+            <a href="../index.html">
+                <img alt="RingOrganic Natural Market logo" src="../images/fresh-apple-icon.svg">
+                <h1>RingOrganic Natural Market</h1>
+            </a>
+            <button class="menu-button">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="../locations/index.html">LOCATIONS</a></li>
+                    <li><a href="../about/about-us/index.html">ABOUT</a></li>
+                    <li><a href="../flyers/index.html">FLYERS</a></li>
+                    <li><a href="../blog/news/index.html">BLOG</a></li>
+                    <li><a href="../events/index.html">EVENTS</a></li>
+                    <li><a href="../careers/index.html">CAREERS</a></li>
+                    <li><a href="../ring-points/index.html">RING POINTS</a></li>
+                    <li><a href="../online-shopping.html">SHOP ONLINE</a></li>
+                    <li><a href="">THE RING CLINIC</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Donation Application</h2>
+            <p>Thank you for reaching out RingOrganic Natural Market. Due to high volume of applications, we will only contact you if we are able to offer support. Please allow at least 3 weeks prior to your event for us to review your request.</p>
+            <form action="../scripts/donations-app.php" method="get">
+                <div>
+                    <label for="store">Nearest RingOrganic location to your organization *</label>
+                    <br>
+                    <select id="store" name="store" required="required">
+                        <option value="">Please choose your nearest RingOrganic</option>
+                        <option value="poco">Port Coquitlam</option>
+                        <option value="nanaimo">Nanaimo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="org">Organization name *</label>
+                    <br>
+                    <input id="org" name="org" required="required" type="text">
+                </div>
+                <div>
+                    <p>Non-Profit *</p>
+                    <input id="no" name="non-profit" type="radio" value="no">
+                    <label for="no">No</label>
+                    <br>
+                    <input id="yes" name="non-profit" required="required" type="radio" value="yes">
+                    <label for="yes">Yes</label>
+                </div>
+                <div>
+                    <label for="mission">Organization purpose *</label>
+                    <br>
+                    <textarea id="mission" name="mission" required="required"></textarea>
+                </div>
+                <div>
+                    <label id="event">Donation event description *</label>
+                    <br>
+                    <textarea id="event_desc" name="event_desc" required="required"></textarea>
+                </div>
+                <div>
+                    <p>Event date, time, and location *</p>
+                    <label for="date_time">Schedule</label>
+                    <input id="date_time" name="event_date_time" required="required" type="datetime-local">
+                    <br>
+                    <label for="location">Location</label>
+                    <input id="location" name="location" required="required" type="text">
+                </div>
+                <div>
+                    <label for="expected_amt">Expected amount of attendees *</label>
+                    <br>
+                    <input id="expected_amt" name="expected_amt" min="0" required="required" type="number">
+                </div>
+                <div>
+                    <p>Expectations from RingOrganic *</p>
+                    <input id="expectation" name="expectation" required="required" type="text">
+                    <br>
+                    <label for="expect_quantity">CA$ Amount</label>
+                    <input id="expect_quantity" name="expect_quantity" min="0.00" required="required" step="0.01" type="number">
+                </div>
+                <div>
+                    <label for="promo_method">Sponsorship Promotion Method(s) *</label>
+                    <br>
+                    <textarea id="promo_method" name="promo_method" required="required"></textarea>
+                </div>
+                <div>
+                    <label for="instagram_id">Instagram ID</label>
+                    <br>
+                    <input id="instagram_id" name="instagram_id" type="text">
+                </div>
+                <div>
+                    <label for="facebook_id">Facebook ID</label>
+                    <br>
+                    <input id="facebook_id" name="facebook_id" type="text">
+                </div>
+                <div>
+                    <label for="twitter_id">Twitter handle</label>
+                    <br>
+                    <input id="twitter_id" name="twitter_id" type="text">
+                </div>
+                <div>
+                    <label for="other_online">Other online presence</label>
+                    <br>
+                    <input id="other_online" name="other_online" type="text">
+                </div>
+                <div>
+                    <p>Name *</p>
+                    <label for="first_name">First</label>
+                    <input id="first_name" name="first_name" required="required" type="text">
+                    <br>
+                    <label for="last_name">Last</label>
+                    <input id="last_name" name="last_name" required="required" type="text">
+                </div>
+                <div>
+                    <label for="email">Email *</label>
+                    <br>
+                    <input id="email" name="email" required="required" type="email">
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <br>
+                    <input id="phone" name="phone" type="tel">
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+        <footer>
+            <h2>Follow Us</h2>
+            <ul>
+                <li><object data="../images/instagram_icon.svg" type="image/svg+xml"></object></li>
+                <li><object data="../images/facebook_icon.svg" type="image/svg+xml"></object></li>
+                <li><object data="../images/twitter_icon.svg" type="image/svg+xml"></object></li>
+                <li><object data="../images/youtube_icon.svg" type="image/svg+xml"></object></li>
+            </ul>
+        </footer>
+    </body>
+</html>
